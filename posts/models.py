@@ -15,7 +15,7 @@ class Category(models.Model):
 class Post(models.Model):
     title = models.CharField(_("Post title"), max_length=250)
     author = models.ForeignKey(settings.AUTH_USER_MODEL, related_name='posts', null=True, on_delete=models.SET_NULL)
-    categoris = models.ManyToManyField(Category,related_name="posts_lists" ,blank=True)
+    categories = models.ManyToManyField(Category,related_name="posts_lists" ,blank=True)
     body = models.TextField(_("Post body"))
     likes = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name="post_likes", blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
