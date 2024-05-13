@@ -16,7 +16,7 @@ To use the blog API locally, follow these steps:
 
 Clone the repository:
 Copy code
-git clone https://github.com/yourusername/blog-api.git
+git clone https://github.com/Alen-Sabu/Blog_API.git
 
 
 Install dependencies:
